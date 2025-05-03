@@ -3,6 +3,8 @@ import { Outlet, NavLink } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
 import Navbar from '../../components/Navbar';
 import ConnectCard from '../../components/ConnectCard';
+import { IoMdShareAlt } from "react-icons/io";
+import { FaHistory } from "react-icons/fa";
 
 const Dashboard: React.FC = () => {
   const { state: { user } } = useAuth();
@@ -34,18 +36,20 @@ const Dashboard: React.FC = () => {
                   <NavLink 
                     to="/dashboard/share" 
                     className={({ isActive }) => 
-                      `nav-link flex items-center py-3 ${isActive ? 'nav-link-active' : ''}`
-                    }
+                      `nav-link flex items-center py-3 ${isActive ? 'nav-link-active' : ''} flex gap-2`
+                  }
                   >
+                    <IoMdShareAlt />
                     <span>Share Connects</span>
                   </NavLink>
                   
                   <NavLink 
                     to="/dashboard/history" 
                     className={({ isActive }) => 
-                      `nav-link flex items-center py-3 ${isActive ? 'nav-link-active' : ''}`
+                      `nav-link flex items-center py-3 ${isActive ? 'nav-link-active' : ''} flex  gap-2`
                     }
                   >
+                    <FaHistory />
                     <span>Transaction History</span>
                   </NavLink>
                 </nav>

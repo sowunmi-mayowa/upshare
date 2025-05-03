@@ -1,4 +1,6 @@
 import React from 'react';
+import { FiTrendingUp } from "react-icons/fi";
+
 
 interface ConnectCardProps {
   connects: number;
@@ -10,6 +12,7 @@ const ConnectCard: React.FC<ConnectCardProps> = ({ connects }) => {
       <div className="flex items-center justify-between mb-4">
         <h3 className="font-semibold text-lg text-neutral-800">Your Connects</h3>
         <div className="p-2 bg-primary-50 rounded-full">
+        <FiTrendingUp />
         </div>
       </div>
       

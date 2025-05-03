@@ -1,5 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { IoGiftOutline } from "react-icons/io5";
+import { FaShareAlt } from "react-icons/fa";
+import { FiTrendingUp } from "react-icons/fi";
 
 const Home: React.FC = () => {
   return (
@@ -54,6 +57,7 @@ const Home: React.FC = () => {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="card card-hover text-center p-8">
               <div className="inline-flex items-center justify-center p-3 bg-primary-50 rounded-full mb-4">
+              <IoGiftOutline />
               </div>
               <h3 className="text-xl font-bold text-neutral-900 mb-2">Free Connects</h3>
               <p className="text-neutral-600">
@@ -63,6 +67,7 @@ const Home: React.FC = () => {
             
             <div className="card card-hover text-center p-8">
               <div className="inline-flex items-center justify-center p-3 bg-primary-50 rounded-full mb-4">
+                <FaShareAlt />
               </div>
               <h3 className="text-xl font-bold text-neutral-900 mb-2">Easy Sharing</h3>
               <p className="text-neutral-600">
@@ -72,6 +77,7 @@ const Home: React.FC = () => {
             
             <div className="card card-hover text-center p-8">
               <div className="inline-flex items-center justify-center p-3 bg-primary-50 rounded-full mb-4">
+              <FiTrendingUp />
               </div>
               <h3 className="text-xl font-bold text-neutral-900 mb-2">Track Transactions</h3>
               <p className="text-neutral-600">
